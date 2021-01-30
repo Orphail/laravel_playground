@@ -21,3 +21,4 @@ favicon.ico
 index.html
 .env.sqlsrv
 /storage/*.*
+package-lock.json
