@@ -1,0 +1,135 @@
+$laptop: #151619;
+$laptop_shadow: #C0C0C0;
+$flesh: #fef1ec;
+$flesh_shadow: #d9d5d4;
+$black: #000000;
+$shirt: #212121;
+$hair: #b57e2c;
+
+body {
+  background-color: #333;
+  height: 100%;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  left: calc(50% - 100px);
+  top: 40%;
+  position: absolute;
+}
+
+.head {
+  background-color: $flesh;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 25px 25px 23px 23px;
+  box-shadow: inset -4px -4px 0 $flesh_shadow;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    background-color: $black;
+    height: 10px;
+    width: 5px;
+    top: 15px;
+    left: 10px;
+    border-radius: 100%;
+  }
+  &:after {
+    left: 30px;
+  }
+}
+
+.hair {
+  background-color: $hair;
+  width: 62px;
+  height: 72px;
+  position: absolute;
+  right: -6px;
+  top: -9px;
+  border-radius: 39%;
+}
+
+.computer {
+  background-color: $laptop;
+  width: 80px;
+  height: 60px;
+  border-radius: 5px;
+  box-shadow: inset -5px 0 0 $laptop_shadow;
+  position: absolute;
+  top: 30px;
+  left: 55px;
+  z-index: 1;
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: $laptop_shadow;
+    height: 5px;
+    width: 40px;
+    bottom: 0;
+    right: -35px;
+    border-radius: 5px;
+  }
+}
+.body {
+  position: absolute;
+  background-color: $shirt;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  right: 0px;
+  top: 52px;
+  box-shadow: inset -5px -5px 0 $black;
+  z-index: 1;
+  &:before {
+    position: absolute;
+    content: '';
+    background-color: $flesh;
+    width: 15px;
+    height: 20px;
+    border-radius: 5px;
+    left: 16px;
+    top: -10px;
+  }
+}
+
+.hand1, .hand2 {
+  background-color: $flesh;
+  width: 35px;
+  height: 10px;
+  border-radius: 5px;
+  position: absolute;
+  right: 10px;
+  top: 18px;
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: $flesh;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    top: 5px;
+  }
+}
+
+.hand2 {
+  right: 46px;
+  width: 15px;
+  animation: typing .4s ease-in-out infinite alternate;
+}
+.hand1 {
+  animation: typing .4s .4s ease-in-out infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}

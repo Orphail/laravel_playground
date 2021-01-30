@@ -1,0 +1,139 @@
+body {
+  background-color: #333;
+  height: 100%;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  left: calc(50% - 100px);
+  top: 40%;
+  position: absolute;
+}
+
+.head {
+  background-color: #fef1ec;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 25px 25px 23px 23px;
+  box-shadow: inset -4px -4px 0 #d9d5d4;
+}
+.head:before, .head:after {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  height: 10px;
+  width: 5px;
+  top: 15px;
+  left: 10px;
+  border-radius: 100%;
+}
+.head:after {
+  left: 30px;
+}
+
+.hair {
+  background-color: #b57e2c;
+  width: 62px;
+  height: 72px;
+  position: absolute;
+  right: -6px;
+  top: -9px;
+  border-radius: 39%;
+}
+
+.computer {
+  background-color: #151619;
+  width: 80px;
+  height: 60px;
+  border-radius: 5px;
+  box-shadow: inset -5px 0 0 #C0C0C0;
+  position: absolute;
+  top: 30px;
+  left: 55px;
+  z-index: 1;
+}
+.computer:before {
+  content: "";
+  position: absolute;
+  background-color: #C0C0C0;
+  height: 5px;
+  width: 40px;
+  bottom: 0;
+  right: -35px;
+  border-radius: 5px;
+}
+
+.body {
+  position: absolute;
+  background-color: #212121;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  right: 0px;
+  top: 52px;
+  box-shadow: inset -5px -5px 0 #000000;
+  z-index: 1;
+}
+.body:before {
+  position: absolute;
+  content: "";
+  background-color: #fef1ec;
+  width: 15px;
+  height: 20px;
+  border-radius: 5px;
+  left: 16px;
+  top: -10px;
+}
+
+.hand1, .hand2 {
+  background-color: #fef1ec;
+  width: 35px;
+  height: 10px;
+  border-radius: 5px;
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+.hand1:before, .hand2:before {
+  content: "";
+  position: absolute;
+  background-color: #fef1ec;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  top: 5px;
+}
+
+.hand2 {
+  right: 46px;
+  width: 15px;
+  -webkit-animation: typing 0.4s ease-in-out infinite alternate;
+          animation: typing 0.4s ease-in-out infinite alternate;
+}
+
+.hand1 {
+  -webkit-animation: typing 0.4s 0.4s ease-in-out infinite alternate;
+          animation: typing 0.4s 0.4s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes typing {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes typing {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
