@@ -1,10 +1,10 @@
 $laptop: #151619;
 $laptop_shadow: #C0C0C0;
-$flesh: #fef1ec;
+$flesh: #fbece5;
 $flesh_shadow: #d9d5d4;
 $black: #000000;
 $shirt: #212121;
-$hair: #b57e2c;
+$hair: #8e5e15;
 
 body {
   background-color: #333;
@@ -47,11 +47,12 @@ body {
 .hair {
   background-color: $hair;
   width: 62px;
-  height: 72px;
+  height: 77px;
   position: absolute;
   right: -6px;
-  top: -9px;
+  top: -7px;
   border-radius: 39%;
+  z-index: -1;
 }
 
 .computer {
@@ -63,7 +64,6 @@ body {
   position: absolute;
   top: 30px;
   left: 55px;
-  z-index: 1;
   &:before {
     content: '';
     position: absolute;
@@ -84,7 +84,6 @@ body {
   right: 0px;
   top: 52px;
   box-shadow: inset -5px -5px 0 $black;
-  z-index: 1;
   &:before {
     position: absolute;
     content: '';
